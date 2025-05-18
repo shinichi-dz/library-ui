@@ -1,8 +1,8 @@
 --!strict
-if getgenv().CheeseLoaded then
+if getgenv().ShinichiLoaded then
 	return
 end
-getgenv().CheeseLoaded = true
+getgenv().ShinichiLoaded = true
 
 local getgenv: () -> ({[string]: any}) = getfenv().getgenv
 
@@ -63,7 +63,7 @@ repeat
 	end
 	
 	if not Luna then
-		warn("[Cheese]: Failed to load Luna, retrying")
+		warn("[Shinichi]: Failed to load Luna, retrying")
 	end
 	
 	task.wait()
@@ -101,14 +101,14 @@ local Flags: Flags = Luna.Options
 getgenv().Flags = Flags
 
 local Window = Luna:CreateWindow({
-  Name = `Cheese | {PlaceName}`,
+  Name = `Shinichi Hub | {PlaceName}`,
   Subtitle = `{ScriptVersion or "Dev Mode"}`,
   LogoID = "82795327169782",
   LoadingEnabled = true,
-  LoadingTitle = `Cheese's {ScriptVersion or "Dev Mode"}`,
+  LoadingTitle = `Shinichi's {ScriptVersion or "Dev Mode"}`,
   LoadingSubtitle = PlaceName,
   ConfigSettings = {
-		RootFolder = "Cheese",
+		RootFolder = "Shinichi",
 		ConfigFolder = `{getgenv().PlaceFileName}-{Player.Name}`,
 		AutoLoadConfig = true,
 	},
@@ -445,8 +445,8 @@ local Features: FeaturesList = {
 				Name = "Destroy UI",
 				Description = "Destroy the UI",
 				Callback = function()
-					Notify("Cheese", "UI Destroyed", "user-round-check", "Lucide")
-					getgenv().CheeseLoaded = nil
+					Notify("Shinichi", "UI Destroyed", "user-round-check", "Lucide")
+					getgenv().ShinichiLoaded = nil
 					Luna:Destroy()
 				end
 			}
@@ -481,7 +481,7 @@ getgenv().CreateUniversalTabs = function()
 		})
 	end
 
-	Notify("Welcome to Cheese", `Loaded in {math.floor((tick() - StartLoadTime) * 10) / 10}s`, "loader", "Lucide")
+	Notify("Welcome to Shinichi Hub", `Loaded in {math.floor((tick() - StartLoadTime) * 10) / 10}s`, "loader", "Lucide")
 end
 
 local Started = getgenv().Started
