@@ -406,7 +406,7 @@ function Update:Window(Config)
 	CloseButton.AnchorPoint = Vector2.new(1, 0.5);
 	CloseButton.Position = UDim2.new(1, -15, 0.5, 0);
 	CloseButton.Size = UDim2.new(0, 20, 0, 20);
-	CloseButton.Image = "rbxassetid://78774998900413";
+	CloseButton.Image = "rbxassetid://7743878857";
 	CloseButton.ImageTransparency = 0;
 	CloseButton.ImageColor3 = Color3.fromRGB(245, 245, 245);
 	CreateRounded(CloseButton, 3);
@@ -421,7 +421,7 @@ function Update:Window(Config)
 	ResizeButton.AnchorPoint = Vector2.new(1, 0.5);
 	ResizeButton.Position = UDim2.new(1, -50, 0.5, 0);
 	ResizeButton.Size = UDim2.new(0, 20, 0, 20);
-	ResizeButton.Image = "rbxassetid://78774998900413";
+	ResizeButton.Image = "rbxassetid://10734886735";
 	ResizeButton.ImageTransparency = 0;
 	ResizeButton.ImageColor3 = Color3.fromRGB(245, 245, 245);
 	CreateRounded(ResizeButton, 3);
@@ -1526,7 +1526,7 @@ function Update:Window(Config)
 			ImageLabel.Position = UDim2.new(0, 10, 0.5, 0);
 			ImageLabel.Size = UDim2.new(0, 14, 0, 14);
 			ImageLabel.AnchorPoint = Vector2.new(0, 0.5);
-			ImageLabel.Image = "rbxassetid://78774998900413";
+			ImageLabel.Image = "rbxassetid://10723415903";
 			ImageLabel.ImageColor3 = Color3.fromRGB(200, 200, 200);
 			function labelfunc:Set(newtext)
 				Label.Text = newtext;
