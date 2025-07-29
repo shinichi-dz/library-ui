@@ -1,5 +1,5 @@
-if (game:GetService("CoreGui")):FindFirstChild("ShinichiHub") and (game:GetService("CoreGui")):FindFirstChild("ScreenGui") then
-	(game:GetService("CoreGui")).ShinichiHub:Destroy();
+if (game:GetService("CoreGui")):FindFirstChild("StrawberryCatHub") and (game:GetService("CoreGui")):FindFirstChild("ScreenGui") then
+	(game:GetService("CoreGui")).StrawberryCatHub:Destroy();
 	(game:GetService("CoreGui")).ScreenGui:Destroy();
 end;
 _G.Primary = Color3.fromRGB(100, 100, 100);
@@ -70,7 +70,7 @@ ImageButton.BackgroundColor3 = _G.Dark;
 ImageButton.ImageColor3 = Color3.fromRGB(250, 250, 250);
 ImageButton.ImageTransparency = 0;
 ImageButton.BackgroundTransparency = 0;
-ImageButton.Image = "rbxassetid://78774998900413";
+ImageButton.Image = "rbxassetid://78163761481918";
 ImageButton.AutoButtonColor = false;
 MakeDraggable(ImageButton, OutlineButton);
 CreateRounded(ImageButton, 10);
@@ -127,14 +127,14 @@ function Update:Notify(desc)
 	Image.BackgroundTransparency = 1;
 	Image.Position = UDim2.new(0, 8, 0, 8);
 	Image.Size = UDim2.new(0, 45, 0, 45);
-	Image.Image = "rbxassetid://78774998900413";
+	Image.Image = "rbxassetid://78163761481918";
 	Title.Parent = Frame;
 	Title.BackgroundColor3 = _G.Primary;
 	Title.BackgroundTransparency = 1;
 	Title.Position = UDim2.new(0, 55, 0, 14);
 	Title.Size = UDim2.new(0, 10, 0, 20);
 	Title.Font = Enum.Font.GothamBold;
-	Title.Text = "Shinichi Hub";
+	Title.Text = "Strawberry Cat Hub";
 	Title.TextColor3 = Color3.fromRGB(255, 255, 255);
 	Title.TextSize = 16;
 	Title.TextXAlignment = Enum.TextXAlignment.Left;
@@ -184,7 +184,7 @@ function Update:StartLoad()
 	MainLoaderFrame.BorderSizePixel = 0;
 	local TitleLoader = Instance.new("TextLabel");
 	TitleLoader.Parent = MainLoaderFrame;
-	TitleLoader.Text = "Shinichi Hub";
+	TitleLoader.Text = "Strawberry Cat Hub";
 	TitleLoader.Font = Enum.Font.FredokaOne;
 	TitleLoader.TextSize = 50;
 	TitleLoader.TextColor3 = Color3.fromRGB(255, 255, 255);
@@ -260,16 +260,16 @@ local SettingsLib = {
 };
 (getgenv()).LoadConfig = function()
 	if readfile and writefile and isfile and isfolder then
-		if not isfolder("Shinichi Hub") then
-			makefolder("Shinichi Hub");
+		if not isfolder("Strawberry Cat Hub") then
+			makefolder("Strawberry Cat Hub");
 		end;
-		if not isfolder("Shinichi Hub/Library/") then
-			makefolder("Shinichi Hub/Library/");
+		if not isfolder("Strawberry Cat Hub/Library/") then
+			makefolder("Strawberry Cat Hub/Library/");
 		end;
-		if not isfile(("Shinichi Hub/Library/" .. game.Players.LocalPlayer.Name .. ".json")) then
-			writefile("Shinichi Hub/Library/" .. game.Players.LocalPlayer.Name .. ".json", (game:GetService("HttpService")):JSONEncode(SettingsLib));
+		if not isfile(("Strawberry Cat Hub/Library/" .. game.Players.LocalPlayer.Name .. ".json")) then
+			writefile("Strawberry Cat Hub/Library/" .. game.Players.LocalPlayer.Name .. ".json", (game:GetService("HttpService")):JSONEncode(SettingsLib));
 		else
-			local Decode = (game:GetService("HttpService")):JSONDecode(readfile("Shinichi Hub/Library/" .. game.Players.LocalPlayer.Name .. ".json"));
+			local Decode = (game:GetService("HttpService")):JSONDecode(readfile("Strawberry Cat Hub/Library/" .. game.Players.LocalPlayer.Name .. ".json"));
 			for i, v in pairs(Decode) do
 				SettingsLib[i] = v;
 			end;
@@ -281,15 +281,15 @@ local SettingsLib = {
 end;
 (getgenv()).SaveConfig = function()
 	if readfile and writefile and isfile and isfolder then
-		if not isfile(("Shinichi Hub/Library/" .. game.Players.LocalPlayer.Name .. ".json")) then
+		if not isfile(("Strawberry Cat Hub/Library/" .. game.Players.LocalPlayer.Name .. ".json")) then
 			(getgenv()).Load();
 		else
-			local Decode = (game:GetService("HttpService")):JSONDecode(readfile("Shinichi Hub/Library/" .. game.Players.LocalPlayer.Name .. ".json"));
+			local Decode = (game:GetService("HttpService")):JSONDecode(readfile("Strawberry Cat Hub/Library/" .. game.Players.LocalPlayer.Name .. ".json"));
 			local Array = {};
 			for i, v in pairs(SettingsLib) do
 				Array[i] = v;
 			end;
-			writefile("Shinichi Hub/Library/" .. game.Players.LocalPlayer.Name .. ".json", (game:GetService("HttpService")):JSONEncode(Array));
+			writefile("Strawberry Cat Hub/Library/" .. game.Players.LocalPlayer.Name .. ".json", (game:GetService("HttpService")):JSONEncode(Array));
 		end;
 	else
 		return warn("Status : Undetected Executor");
@@ -320,13 +320,13 @@ function Update:Window(Config)
 	local currentpage = "";
 	local keybind = keybind or Enum.KeyCode.RightControl;
 	local yoo = string.gsub(tostring(keybind), "Enum.KeyCode.", "");
-	local ShinichiHub = Instance.new("ScreenGui");
-	ShinichiHub.Name = "ShinichiHub";
-	ShinichiHub.Parent = game.CoreGui;
-	ShinichiHub.DisplayOrder = 999;
+	local StrawberryCatHub = Instance.new("ScreenGui");
+	StrawberryCatHub.Name = "StrawberryCatHub";
+	StrawberryCatHub.Parent = game.CoreGui;
+	StrawberryCatHub.DisplayOrder = 999;
 	local OutlineMain = Instance.new("Frame");
 	OutlineMain.Name = "OutlineMain";
-	OutlineMain.Parent = ShinichiHub;
+	OutlineMain.Parent = StrawberryCatHub;
 	OutlineMain.ClipsDescendants = true;
 	OutlineMain.AnchorPoint = Vector2.new(0.5, 0.5);
 	OutlineMain.BackgroundColor3 = Color3.fromRGB(30, 30, 30);
@@ -378,7 +378,7 @@ function Update:Window(Config)
 	NameHub.AnchorPoint = Vector2.new(0, 0.5);
 	NameHub.Size = UDim2.new(0, 1, 0, 25);
 	NameHub.Font = Enum.Font.GothamBold;
-	NameHub.Text = "Shinichi Hub [ Free ]";
+	NameHub.Text = "Strawberry Cat Hub";
 	NameHub.TextSize = 20;
 	NameHub.TextColor3 = Color3.fromRGB(255, 255, 255);
 	NameHub.TextXAlignment = Enum.TextXAlignment.Left;
@@ -608,8 +608,8 @@ function Update:Window(Config)
 		(getgenv()).SaveConfig();
 	end);
 	CreateButton("Reset Config", function()
-		if isfolder("Shinichi Hub") then
-			delfolder("Shinichi Hub");
+		if isfolder("Strawberry Cat Hub") then
+			delfolder("Strawberry Cat Hub");
 		end;
 		Update:Notify("Config has been reseted!");
 	end);
