@@ -45,44 +45,45 @@ local T1UIColor = {
 
 
 local IndexUIColor = {
-    ["Border Color"] = Color3.fromRGB(200, 160, 60),
-    ["Click Effect Color"] = Color3.fromRGB(230, 190, 90),
-    ["Setting Icon Color"] = Color3.fromRGB(220, 180, 80),
-    ["Logo Image"] = "rbxassetid://82079893387523",
-    ["Search Icon Color"] = Color3.fromRGB(235, 200, 100),
-    ["Search Icon Highlight Color"] = Color3.fromRGB(255, 220, 120),
-    ["GUI Text Color"] = Color3.fromRGB(255, 240, 190),
-    ["Text Color"] = Color3.fromRGB(255, 235, 180),
-    ["Placeholder Text Color"] = Color3.fromRGB(230, 210, 150),
-    ["Title Text Color"] = Color3.fromRGB(255, 230, 150),
+    ["Border Color"] = Color3.fromRGB(245, 220, 150),
+    ["Click Effect Color"] = Color3.fromRGB(255, 245, 200),
+    ["Setting Icon Color"] = Color3.fromRGB(255, 240, 190),
+    ["Logo Image"] = "rbxassetid://129781592728096",
+    ["Search Icon Color"] = Color3.fromRGB(255, 240, 190),
+    ["Search Icon Highlight Color"] = Color3.fromRGB(255, 225, 150),
+    ["GUI Text Color"] = Color3.fromRGB(255, 250, 230),
+    ["Text Color"] = Color3.fromRGB(255, 250, 230),
+    ["Placeholder Text Color"] = Color3.fromRGB(240, 225, 180),
+    ["Title Text Color"] = Color3.fromRGB(255, 240, 170),
 
-    -- 🌕 Nền vàng đồng nhạt, ánh kim sáng
-    ["Background Main Color"] = Color3.fromRGB(55, 45, 25),
-    ["Background 1 Color"] = Color3.fromRGB(65, 50, 30),
-    ["Background 2 Color"] = Color3.fromRGB(75, 58, 35),
-    ["Background 3 Color"] = Color3.fromRGB(85, 65, 40),
+    -- 🍦 Nền vàng kem pha trắng nhẹ
+    ["Background Main Color"] = Color3.fromRGB(85, 75, 55),
+    ["Background 1 Color"] = Color3.fromRGB(95, 85, 65),
+    ["Background 2 Color"] = Color3.fromRGB(105, 95, 75),
+    ["Background 3 Color"] = Color3.fromRGB(100, 90, 70),
 
     ["Background Image"] = "rbxassetid://11725689081",
 
-    ["Page Selected Color"] = Color3.fromRGB(200, 160, 60),
-    ["Section Text Color"] = Color3.fromRGB(230, 190, 80),
-    ["Section Underline Color"] = Color3.fromRGB(210, 170, 70),
-    ["Toggle Border Color"] = Color3.fromRGB(190, 150, 60),
-    ["Toggle Checked Color"] = Color3.fromRGB(230, 190, 90),
-    ["Toggle Desc Color"] = Color3.fromRGB(210, 180, 110),
-    ["Button Color"] = Color3.fromRGB(200, 160, 60),
-    ["Label Color"] = Color3.fromRGB(190, 150, 55),
-    ["Dropdown Selected Color"] = Color3.fromRGB(200, 160, 60),
-    ["Dropdown Selected Check Color"] = Color3.fromRGB(190, 150, 55),
-    ["Textbox Highlight Color"] = Color3.fromRGB(200, 160, 60),
-    ["Box Highlight Color"] = Color3.fromRGB(200, 160, 60),
-    ["Slider Line Color"] = Color3.fromRGB(100, 80, 50),
-    ["Slider Highlight Color"] = Color3.fromRGB(200, 160, 60),
+    ["Page Selected Color"] = Color3.fromRGB(245, 220, 150),
+    ["Section Text Color"] = Color3.fromRGB(255, 240, 170),
+    ["Section Underline Color"] = Color3.fromRGB(250, 230, 160),
+    ["Toggle Border Color"] = Color3.fromRGB(240, 210, 140),
+    ["Toggle Checked Color"] = Color3.fromRGB(255, 245, 200),
+    ["Toggle Desc Color"] = Color3.fromRGB(230, 215, 170),
+    ["Button Color"] = Color3.fromRGB(245, 220, 150),
+    ["Label Color"] = Color3.fromRGB(250, 225, 160),
+    ["Dropdown Selected Color"] = Color3.fromRGB(245, 220, 150),
+    ["Dropdown Selected Check Color"] = Color3.fromRGB(240, 210, 140),
+    ["Textbox Highlight Color"] = Color3.fromRGB(245, 220, 150),
+    ["Box Highlight Color"] = Color3.fromRGB(245, 220, 150),
+    ["Slider Line Color"] = Color3.fromRGB(130, 115, 90),
+    ["Slider Highlight Color"] = Color3.fromRGB(250, 230, 160),
     ["Tween Animation 1 Speed"] = DisableAnimation and 0 or 0.25,
     ["Tween Animation 2 Speed"] = DisableAnimation and 0 or 0.5,
     ["Tween Animation 3 Speed"] = DisableAnimation and 0 or 0.1,
     ["Text Stroke Transparency"] = .5
 }
+
 
 
 getgenv().UIColor = getgenv().T1 and T1UIColor or IndexUIColor
