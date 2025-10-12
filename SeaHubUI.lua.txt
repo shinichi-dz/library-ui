@@ -45,25 +45,22 @@ local T1UIColor = {
 
 
 local IndexUIColor = {
-    ["Border Color"] = Color3.fromRGB(245, 220, 150),
-    ["Click Effect Color"] = Color3.fromRGB(255, 245, 200),
-    ["Setting Icon Color"] = Color3.fromRGB(255, 240, 190),
-    ["Logo Image"] = "rbxassetid://129781592728096",
-    ["Search Icon Color"] = Color3.fromRGB(255, 240, 190),
-    ["Search Icon Highlight Color"] = Color3.fromRGB(255, 225, 150),
-    ["GUI Text Color"] = Color3.fromRGB(255, 250, 230),
-    ["Text Color"] = Color3.fromRGB(255, 250, 230),
-    ["Placeholder Text Color"] = Color3.fromRGB(240, 225, 180),
-    ["Title Text Color"] = Color3.fromRGB(255, 240, 170),
-
-    -- 🍦 Nền vàng kem pha trắng nhẹ
-    ["Background Main Color"] = Color3.fromRGB(85, 75, 55),
-    ["Background 1 Color"] = Color3.fromRGB(95, 85, 65),
-    ["Background 2 Color"] = Color3.fromRGB(105, 95, 75),
-    ["Background 3 Color"] = Color3.fromRGB(100, 90, 70),
-
-    ["Background Image"] = "rbxassetid://11725689081",
-
+	["Border Color"] = Color3.fromRGB(245, 220, 150),
+	["Click Effect Color"] = Color3.fromRGB(255, 245, 200),
+	["Setting Icon Color"] = Color3.fromRGB(255, 240, 190),
+	["Logo Image"] = "rbxassetid://82079893387523",
+	["Search Icon Color"] = Color3.fromRGB(255, 240, 190),
+	["Search Icon Highlight Color"] = Color3.fromRGB(255, 225, 150),
+	["GUI Text Color"] = Color3.fromRGB(255, 250, 230),
+	["Text Color"] = Color3.fromRGB(255, 250, 230),
+	["Placeholder Text Color"] = Color3.fromRGB(240, 225, 180),
+	["Title Text Color"] = Color3.fromRGB(255, 240, 170),
+	["Background Main Color"] = Color3.fromRGB(85, 75, 55),
+	["Background 1 Color"] = Color3.fromRGB(95, 85, 65),
+	["Background 1 Transparency"] = 0,
+	["Background 2 Color"] = Color3.fromRGB(105, 95, 75),
+	["Background 3 Color"] = Color3.fromRGB(100, 90, 70),
+	["Background Image"] = "rbxassetid://11725689081",
     ["Page Selected Color"] = Color3.fromRGB(245, 220, 150),
     ["Section Text Color"] = Color3.fromRGB(255, 240, 170),
     ["Section Underline Color"] = Color3.fromRGB(250, 230, 160),
