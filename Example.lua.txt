@@ -210,7 +210,7 @@ function vu492.NewWindow(_, _, p508, p509)
     v519.Size = UDim2.new(0.896555603, 0, 0.433997005, 0)
     v519.ZIndex = 3
     v519.Font = Enum.Font.GothamBold
-    v519.Text = "Dragon Hub<font color=\'rgb(255, 0, 0)\'> Game Lồn</font>"
+    v519.Text = "Dragon Hub<font color=\'rgb(255, 0, 0)\'> King Legacy</font>"
     v519.RichText = true
     v519.TextColor3 = Color3.fromRGB(255, 255, 255)
     v519.TextScaled = true
@@ -3271,3 +3271,9 @@ function vu492.NewWindow(_, _, p508, p509)
     end
     return vu511
 end
+local v993 = identifyexecutor()
+local v994 = v993 == "Solara" and "Solara - Some functions may not work like fast attack etc.." or v993
+name = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+_G.Title = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+local v995 = vu492:NewWindow(_G.Title)
+v995:AddMenu("Main Tab Title", "Game : " .. name .. "   Version : PREMUIM", "ticket", "tab")
