@@ -167,7 +167,7 @@ function Library:NewWindow(ConfigWindow)
 
 	Line.Name = "Line"
 	Line.Parent = Top
-	Line.BackgroundColor3 = Color3.fromHex("#B300FF")
+	Line.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
 	Line.BackgroundTransparency = 0.500
 	Line.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	Line.BorderSizePixel = 0
@@ -399,7 +399,7 @@ function Library:NewWindow(ConfigWindow)
 	Icon_3.ImageRectOffset = Vector2.new(480, 0)
 	Icon_3.ImageRectSize = Vector2.new(96, 96)
 
-	UIStroke.Color = Color3.fromHex("#B300FF")
+	UIStroke.Color = Color3.fromRGB(0, 255, 0)
 	UIStroke.Transparency = 0.5
 	UIStroke.Parent = Main
 
@@ -414,7 +414,7 @@ function Library:NewWindow(ConfigWindow)
 
 	Line_2.Name = "Line"
 	Line_2.Parent = TabFrame
-	Line_2.BackgroundColor3 = Color3.fromHex("#B300FF")
+	Line_2.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
 	Line_2.BackgroundTransparency = 0.500
 	Line_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	Line_2.BorderSizePixel = 0
@@ -558,7 +558,7 @@ function Library:NewWindow(ConfigWindow)
 
 		Choose_2.Name = "Choose"
 		Choose_2.Parent = TabDisable
-		Choose_2.BackgroundColor3 = Color3.fromHex("#B300FF")
+		Choose_2.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
 		Choose_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		Choose_2.BorderSizePixel = 0
 		Choose_2.Position = UDim2.new(0, 0, 0, 5)
@@ -1468,7 +1468,7 @@ function Library:NewWindow(ConfigWindow)
 
 				SliderDraggable.Name = "SliderDraggable"
 				SliderDraggable.Parent = SliderFrame
-				SliderDraggable.BackgroundColor3 = Color3.fromHex("#B300FF")
+				SliderDraggable.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
 				SliderDraggable.BorderColor3 = Color3.fromRGB(0, 0, 0)
 				SliderDraggable.BorderSizePixel = 0
 				SliderDraggable.Size = UDim2.new(0, 20, 1, 0)
