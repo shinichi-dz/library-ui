@@ -814,7 +814,7 @@ function Library:NewWindow(ConfigWindow)
 				local ToggleFunc = { Value = cftoggle.Default }
 				function ToggleFunc:Set(Boolean)
 					if Boolean then
-						Library:TweenInstance(ToggleCheck, 0.3, "BackgroundColor3", Color3.fromRGB(170, 0, 255))
+						Library:TweenInstance(ToggleCheck, 0.3, "BackgroundColor3", Color3.fromRGB(0, 255, 0))
 						Library:TweenInstance(Check, 0.3, "Position", UDim2.new(0, 22, 0.5, 0))
 						Library:TweenInstance(Check, 0.3, "BackgroundColor3", Color3.fromRGB(255, 255, 255))
 					else
@@ -1247,7 +1247,7 @@ function Library:NewWindow(ConfigWindow)
 					Title_12.TextSize = 13.000
 					Title_12.TextTransparency = 0.500
 
-					UIGradient_3.Color = ColorSequence.new { ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(201, 5, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0)) }
+					UIGradient_3.Color = ColorSequence.new { ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(22, 255, 1)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0)) }
 					UIGradient_3.Rotation = 0.9900000095367432
 					UIGradient_3.Transparency = NumberSequence.new { NumberSequenceKeypoint.new(0.00, 0.50), NumberSequenceKeypoint.new(0.50, 0.49), NumberSequenceKeypoint.new(1.00, 0.44) }
 					UIGradient_3.Parent = Option2
@@ -1491,7 +1491,7 @@ function Library:NewWindow(ConfigWindow)
 				SliderValue.Name = "SliderValue"
 				SliderValue.Parent = Slider
 				SliderValue.AnchorPoint = Vector2.new(0, 0.5)
-				SliderValue.BackgroundColor3 = Color3.fromRGB(178, 0, 254)
+				SliderValue.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
 				SliderValue.BorderColor3 = Color3.fromRGB(0, 0, 0)
 				SliderValue.BorderSizePixel = 0
 				SliderValue.Position = UDim2.new(1, -185, 0.5, 0)
@@ -1679,7 +1679,7 @@ function Library:NewWindow(ConfigWindow)
 	-- StarterGui.ScreenGui.ImageButton.UIStroke
 	G2L["4"] = Instance.new("UIStroke", G2L["2"]);
 	G2L["4"]["Thickness"] = 2;
-	G2L["4"]["Color"] = Color3.fromRGB(255, 92, 220);
+	G2L["4"]["Color"] = Color3.fromRGB(0, 255, 0);
 	G2L["2"].MouseButton1Click:Connect(function()
 		KingRuaUI_Premium.Enabled = not KingRuaUI_Premium.Enabled
 	end)
