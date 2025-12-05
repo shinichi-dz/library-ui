@@ -691,7 +691,7 @@ function Library:NewWindow(ConfigWindow)
 			Line_3.Position = UDim2.new(0, 0, 1, -2)
 			Line_3.Size = UDim2.new(1, 0, 0, 2)
 
-			UIGradient.Color = ColorSequence.new { ColorSequenceKeypoint.new(0.00, Color3.fromRGB(24, 24, 25)), ColorSequenceKeypoint.new(0.52, Color3.fromRGB(217, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(24, 24, 25)) }
+			UIGradient.Color = ColorSequence.new { ColorSequenceKeypoint.new(0.00, Color3.fromRGB(24, 24, 25)), ColorSequenceKeypoint.new(0.52, Color3.fromRGB(0, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(24, 24, 25)) }
 			UIGradient.Transparency = NumberSequence.new { NumberSequenceKeypoint.new(0.00, 0.53), NumberSequenceKeypoint.new(0.51, 0.00), NumberSequenceKeypoint.new(1.00, 0.51) }
 			UIGradient.Parent = Line_3
 
